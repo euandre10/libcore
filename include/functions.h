@@ -12,14 +12,18 @@ void	*my_memset	(void *dest, int value, size_t bytes);
 void	*my_memalloc	(size_t num_elem, size_t elem_size);
 
 /* CHAR FUNCTIONS */
-int	my_isalpha	(int ch);
+int	my_isalpha	(int ch); //new
+int	my_isalnum	(int ch);
+int	my_isprint	(int ch); //new
+int	my_isascii	(int ch); //new
 int	my_isdigit	(int ch);
 int	my_isspace	(int ch);
 int	my_islower	(int ch);
 int	my_isupper	(int ch);
 int	my_tolower	(int ch);
 int	my_toupper	(int ch);
-char	*my_itoa	(int number, char *str, int base);
+size_t	my_chrcount	(char *str, int ch); //new
+char	*my_swapchars	(char *str, int search, int swap); //new
 
 /* === STRING FUNCTIONS */
 size_t	my_strlen	(const char *str);
@@ -29,7 +33,13 @@ char	*my_strdup	(const char *str);
 char	*my_strcpy	(char *dest, const char *src);
 char	*my_strcat	(char *dest, const char *src);
 char	*my_strrev	(char *str);
+char	*my_strchr	(char *str, int ch); //new
+char	*my_strrchr	(char *str, int ch); //new
+char	*my_strstr	(char *str, const char *substr); //new
+char	*my_strjoin	(const char *str1, const char *str2); //new
+char	*my_swapwords	(char *str, const char *word);
 
-/* OTHER FUNCTIONS */
+/ OTHER FUNCTIONS */
 void	my_print	(const char *str);
 void	my_println	(const char *str);
+char	*my_itoa	(int number, char *str, int base);

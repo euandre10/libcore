@@ -23,6 +23,9 @@ $(obj_dir)/%.o: $(src_dir)/%.c
 	@mkdir -p $(dir $@)
 	@$(cc) $(cflags) -c $< -o $@
 
+prac: main.c $(lib)
+	$(cc) $(cflags) main.c $(lib) -o program
+
 .PHONY: clean
 clean:
-	rm -rf $(obj_dir) 
+	rm -rf $(obj_dir) program

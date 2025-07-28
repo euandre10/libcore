@@ -37,9 +37,9 @@ char	*my_strchr	(char *str, int ch); //new
 char	*my_strrchr	(char *str, int ch); //new
 char	*my_strstr	(char *str, const char *substr); //new
 char	*my_strjoin	(const char *str1, const char *str2); //new
-char	*my_swapwords	(char *str, const char *word);
+char	*my_swapwords	(char *str, const char *word, const char *newword); //not finished
 
-/ OTHER FUNCTIONS */
+/* OTHER FUNCTIONS */
 void	my_print	(const char *str);
 void	my_println	(const char *str);
 char	*my_itoa	(int number, char *str, int base);
